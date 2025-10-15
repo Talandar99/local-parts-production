@@ -1,0 +1,14 @@
+{
+    "name": "local-parts-production",
+    "version": "0.0.1",
+    "title": "Local parts production",
+    "author": "Talandar",
+    "dependencies": [
+        "base >= 2.0",
+        "space-age",
+        "PlanetsLib",
+        "? maraxsis"
+    ],
+    "description": "",
+    "factorio_version": "2.0"
+}
