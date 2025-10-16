@@ -2,7 +2,7 @@ function rocketsilopipes()
 	return {
 		north = {
 
-			filename = "__pelagos__/graphics/rocketsilopipes/rocketsilopipe-NN.png",
+			filename = "__local-parts-production__/graphics/rocketsilopipes/rocketsilopipe-NN.png",
 			priority = "extra-high",
 			width = 71,
 			--height = 38,
@@ -12,7 +12,7 @@ function rocketsilopipes()
 			scale = 0.5,
 		},
 		east = {
-			filename = "__pelagos__/graphics/rocketsilopipes/rocketsilopipe-E.png",
+			filename = "__local-parts-production__/graphics/rocketsilopipes/rocketsilopipe-E.png",
 			priority = "extra-high",
 			width = 42,
 			height = 76,
@@ -20,7 +20,7 @@ function rocketsilopipes()
 			scale = 0.5,
 		},
 		south = {
-			filename = "__pelagos__/graphics/rocketsilopipes/rocketsilopipe-S.png",
+			filename = "__local-parts-production__/graphics/rocketsilopipes/rocketsilopipe-S.png",
 			priority = "extra-high",
 			width = 88,
 			height = 61,
@@ -28,7 +28,7 @@ function rocketsilopipes()
 			scale = 0.5,
 		},
 		west = {
-			filename = "__pelagos__/graphics/rocketsilopipes/rocketsilopipe-W.png",
+			filename = "__local-parts-production__/graphics/rocketsilopipes/rocketsilopipe-W.png",
 			priority = "extra-high",
 			width = 39,
 			height = 73,

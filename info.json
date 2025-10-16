@@ -1,7 +1,7 @@
 {
     "name": "local-parts-production",
-    "version": "0.0.1",
-    "title": "Local parts production",
+    "version": "0.0.2",
+    "title": "Local rocket parts production",
     "author": "Talandar",
     "dependencies": [
         "base >= 2.0",
@@ -9,6 +9,6 @@
         "PlanetsLib",
         "? maraxsis"
     ],
-    "description": "",
+    "description": "Fresh, local, and ready for launch.",
     "factorio_version": "2.0"
 }
