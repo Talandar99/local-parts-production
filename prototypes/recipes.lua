@@ -13,7 +13,7 @@ data:extend({
 		category = "rocket-building",
 		ingredients = {
 			{ type = "item", name = "processing-unit", amount = 1 },
-			{ type = "item", name = "carbon-fiber", amount = 3 },
+			{ type = "item", name = "carbon-fiber", amount = 2 },
 			{ type = "item", name = "rocket-fuel", amount = 1 },
 		},
 		surface_conditions = {
