@@ -1,6 +1,6 @@
 {
     "name": "local-parts-production",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "title": "Local rocket parts production",
     "author": "Talandar",
     "dependencies": [
