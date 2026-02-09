@@ -13,21 +13,49 @@ local function on_built_rocket_silo(event)
 	end
 
 	-- set_recipe based on surface
+
 	local recipe
-	if entity.surface.name == "gleba" then
-		recipe = "gleba-local-rocket-part"
-		entity.set_recipe(recipe)
-		entity.recipe_locked = true
+	if settings.startup["gleba-local-rocket-part"].value then
+		if entity.surface.name == "gleba" then
+			recipe = "gleba-local-rocket-part"
+			entity.set_recipe(recipe)
+			entity.recipe_locked = true
+		end
 	end
-	if entity.surface.name == "vulcanus" then
-		recipe = "vulcanus-local-rocket-part"
-		entity.set_recipe(recipe)
-		entity.recipe_locked = true
+	if settings.startup["vulcanus-local-rocket-part"].value then
+		if entity.surface.name == "vulcanus" then
+			recipe = "vulcanus-local-rocket-part"
+			entity.set_recipe(recipe)
+			entity.recipe_locked = true
+		end
 	end
-	if entity.surface.name == "aquilo" then
-		recipe = "aquilo-local-rocket-part"
-		entity.set_recipe(recipe)
-		entity.recipe_locked = true
+	if settings.startup["aquilo-local-rocket-part"].value then
+		if entity.surface.name == "aquilo" then
+			recipe = "aquilo-local-rocket-part"
+			entity.set_recipe(recipe)
+			entity.recipe_locked = true
+		end
+	end
+	if script.active_mods["lignumis"] and settings.startup["lignumis-local-rocket-part"].value then
+		if entity.surface.name == "lignumis" then
+			recipe = "provisional-rocket-part"
+			entity.set_recipe(recipe)
+			entity.recipe_locked = true
+		end
+	end
+	if script.active_mods["planetaris-arig"] and settings.startup["arig-local-rocket-part"].value then
+		if entity.surface.name == "arig" then
+			recipe = "arig-local-rocket-part"
+			entity.set_recipe(recipe)
+			entity.recipe_locked = true
+		end
+	end
+	if script.active_mods["skewer_planet_vesta"] and settings.startup["vesta-local-rocket-part"].value then
+		if entity.surface.name == "vesta" then
+			recipe = "vesta-local-rocket-part"
+			entity.set_recipe(recipe)
+			entity.recipe_locked = true
+		end
 	end
 end
 

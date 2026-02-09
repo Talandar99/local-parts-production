@@ -81,3 +81,83 @@ data:extend({
 		allow_productivity = true,
 	},
 })
+-- arig
+if mods["planetaris-arig"] then
+	data:extend({
+		{
+			type = "recipe",
+			name = "arig-local-rocket-part",
+			icons = {
+				{ icon = "__base__/graphics/icons/rocket-part.png", icon_size = 64 },
+				{
+					icon = "__planetaris-arig__/graphics/icons/arig.png",
+					icon_size = 64,
+					scale = 0.25,
+					shift = { 8, 8 },
+				},
+			},
+			energy_required = 3,
+			enabled = false,
+			hide_from_player_crafting = true,
+			auto_recycle = false,
+			category = "rocket-building",
+			ingredients = {
+				{ type = "item", name = "processing-unit", amount = 1 },
+				{ type = "item", name = "planetaris-raw-diamond", amount = 1 },
+				{ type = "item", name = "rocket-fuel", amount = 1 },
+			},
+			surface_conditions = {
+				{
+					property = "pressure",
+					min = 600,
+					max = 600,
+				},
+				{
+					property = "planetaris-dust-concentration",
+					min = 60,
+					max = 60,
+				},
+			},
+			results = { { type = "item", name = "rocket-part", amount = 1 } },
+			allow_productivity = true,
+		},
+	})
+end
+-- vesta
+if mods["skewer_planet_vesta"] then
+	data:extend({
+		{
+			type = "recipe",
+			name = "vesta-local-rocket-part",
+			icons = {
+				{ icon = "__base__/graphics/icons/rocket-part.png", icon_size = 64 },
+				{
+
+					icon = "__skewer_planet_vesta__/graphics/icons/vesta_icon.png",
+					icon_size = 64,
+					scale = 0.25,
+					shift = { 8, 8 },
+				},
+			},
+			energy_required = 3,
+			enabled = false,
+			hide_from_player_crafting = true,
+			auto_recycle = false,
+			category = "rocket-building",
+			ingredients = {
+				{ type = "item", name = "processing-unit", amount = 1 },
+				{ type = "item", name = "iridium-plate", amount = 1 },
+				{ type = "fluid", name = "deuterium", amount = 10 },
+			},
+			surface_conditions = {
+				{
+					property = "pressure",
+					min = 500,
+					max = 500,
+				},
+			},
+			results = { { type = "item", name = "rocket-part", amount = 1 } },
+			allow_productivity = true,
+		},
+	})
+end

@@ -38,3 +38,37 @@ table.insert(
 	{ type = "change-recipe-productivity", recipe = "aquilo-local-rocket-part", change = 0.1 }
 )
 ---------------------------------------------------------------------------------------------------
+-- Vesta
+---------------------------------------------------------------------------------------------------
+if mods["skewer_planet_vesta"] then
+	table.insert(
+		data.raw.technology["s1_gas_manipulation_science_pack"].effects,
+		{ type = "unlock-recipe", recipe = "vesta-local-rocket-part" }
+	)
+	table.insert(
+		data.raw.technology["rocket-part-productivity"].effects,
+		{ type = "change-recipe-productivity", recipe = "vesta-local-rocket-part", change = 0.1 }
+	)
+end
+---------------------------------------------------------------------------------------------------
+-- Arig
+---------------------------------------------------------------------------------------------------
+if mods["planetaris-arig"] then
+	table.insert(
+		data.raw.technology["planetaris-compression-science"].effects,
+		{ type = "unlock-recipe", recipe = "arig-local-rocket-part" }
+	)
+	table.insert(
+		data.raw.technology["rocket-part-productivity"].effects,
+		{ type = "change-recipe-productivity", recipe = "arig-local-rocket-part", change = 0.1 }
+	)
+end
+---------------------------------------------------------------------------------------------------
+-- Lignumis
+---------------------------------------------------------------------------------------------------
+if mods["lignumis"] then
+	table.insert(
+		data.raw.technology["rocket-part-productivity"].effects,
+		{ type = "change-recipe-productivity", recipe = "provisional-rocket-part", change = 0.1 }
+	)
+end
